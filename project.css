@@ -1,0 +1,81 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.mainParent{
+    height: 1000px;
+    width: 100%;
+    background-color: rgb(238, 141, 131);
+}
+
+.navbar{
+    height: 100px;
+    width: 100%;
+    background-color: crimson;
+    display: flex;
+    justify-content: space-between;
+    position: fixed; 
+}
+.navbar .child{
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+
+
+}
+.navbar .first{
+    justify-content: center;
+}
+
+.navbar .first i{
+    font-size: 20px;
+    color: white;
+}
+
+.navbar .third{
+    color: white;
+}
+
+.navbar .third i{
+    font-size: 30px;
+    padding:  10px;
+    margin-left: 20px;
+    justify-content: left;
+    border-radius: 50%;
+}
+
+.navbar .third i:hover{
+    transform: scale(0.8);
+    transition: 0.7s;
+    background-color: gainsboro;
+}
+
+.home{
+    height: 400px;
+    width: 100%;
+    position: relative;
+    top: 100px;
+
+}
+
+.home .homeContent{
+    background-color: yellow;
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    top: 50px;
+    z-index: 1;
+
+}
+
+.home .homeImage img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    /* z-index: -1; */
+
+}

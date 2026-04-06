@@ -126,6 +126,7 @@
     height: 100px;
     width: 100%;
     margin-top: 50px;
+    
     background-color: pink;
     display: flex;
     align-items: center;
@@ -172,3 +173,250 @@
     
 }
 
+.RichSection{
+    height: 600px;
+    width: 100%;
+    background-color: salmon;
+    position: relative;
+    top: 160px;
+
+}
+
+.RichSection h1{
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.RichSection .cards{
+    height: 400px;
+    width: 95%;
+    background-color: yellow;
+    position: relative;
+    top: 50px;
+    left: 2.5%;
+    padding: 10px;
+    display: flex;
+}
+
+.RichSection .cards .card{
+    height: 360px;
+    width: 360px;
+    border: solid;
+}
+
+.RichSection .cards .card img{
+    height: 300px;
+    width: inherit;
+}
+
+.RichSection{
+    height: 600px;
+    width: 100%;
+    /* background-color: salmon; */
+    position: relative;
+    top: 160px;
+}
+
+.RichSection h1{
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+.RichSection p{
+    text-align: center;
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+}
+
+.RichSection .cards{
+    height: 400px;
+    width: 95%;
+    /* background-color: yellow; */
+    position: relative;
+    top: 50px;
+    left: 2.5%;
+    padding: 10px;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    /* animation:slide 2s ease infinite; */
+    overflow: hidden;
+
+}
+
+
+
+.RichSection .cards .card{
+    height: 360px;
+    width: 280px;
+    border-radius: 5px;
+    /* border: solid; */
+    background-color: rgb(255, 191, 202);
+    color: crimson;
+    animation:slide 2s ease infinite;
+}
+
+@keyframes slide {
+    50%{
+        transform: translate(-100px);
+    }
+    100%{
+        transform: translate(100px);
+    }
+}
+
+.RichSection .cards .card img{
+    height: 300px;
+    width: 280px;
+    border-radius: 5px 5px 0 0;
+
+}
+
+.RichSection .cardstwo{
+    height: 4000px;
+    width: 95%;
+    /* background-color: yellow; */
+    position: relative;
+    top: 50px;
+    left: 2.5%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    overflow: hidden;
+    
+}
+
+.RichSection .cardstwo .card{
+    width: 280px;
+    height: 360px;
+    background-color: pink;
+    color: crimson;
+    border-radius: 10px;
+    animation: slidetwo 2s ease infinite;
+}
+
+@keyframes slidetwo {
+    50%{
+        transform: translate(100px);
+    }
+    100%{
+        transform: translate(-100px);
+    }
+}
+
+.RichSection .cardstwo .card img{
+    width: inherit;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+}
+
+     /* About section */
+
+.about{
+
+    min-height: 550px;
+    width: 100%;
+    /* background-color: aqua; */
+    margin-top: 500px;
+    display: flex;
+
+}
+
+.about .first , .about .second{
+    height: 550px;
+    width: 50%;
+    /* background-color: orange; */
+    /* border: solid; */
+}
+
+.about .first{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.about .first img{
+    height: inherit;
+    width: 70%;
+}
+
+.about .second{
+    padding: 10px;
+}
+
+.about .second h2{
+    color: crimson;
+    margin-top: 20px;
+}
+
+.about .second h1{
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.about .second p{
+    font-size:20px ;
+    line-height: 30px;
+    margin-right: 30px;
+
+}
+
+
+.about .second button{
+     background-color: #534535;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.about .second button:hover {
+    background-color: white;
+    border: 1px solid crimson;
+    color: crimson;
+}
+
+.services{
+    margin-top: 100px;
+    min-height: 600px;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.services .subParent{
+    min-height: 500px;
+    width: 85%;
+    /* background-color: aqua; */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+
+}
+
+.services .card{
+    min-height: 400px;
+    width: 300px;
+    background-color: rgb(233, 39, 78);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+
+.services .card img{
+    height: inherit;
+    width: inherit;
+    margin-left: -20px;
+}
